@@ -1,78 +1,107 @@
 <!doctype html>
 <html lang="pt-br" class="light">
   <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Higilar Santa Maria - Limpeza e higienização profissional residencial há mais de 10 anos">
+    <title>Higilar Santa Maria | Limpeza Profissional</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
+      <!-- Profile Section -->
       <div id="profile">
-        <img
-          src="./assets/img higilar light.jfif"
-          alt="Logomarca da empresa Higilar Santa Maria"
-        />
-        <p>@higilarsantamaria</p>
+        <div class="profile-image-wrapper">
+          <img
+            id="profileImg"
+            src="./assets/img higilar light.jfif"
+            alt="Logo da Higilar Santa Maria"
+            loading="lazy"
+          />
+        </div>
+        <h1>@higilarsantamaria</h1>
+        <p>Higienizando no aconchego do seu Lar</p>
       </div>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
+      <!-- Theme Toggle -->
+      <div id="switch" class="theme-toggle">
+        <button class="toggle-button" aria-label="Alternar tema">
+          <span class="toggle-circle"></span>
+        </button>
+        <span class="toggle-track"></span>
       </div>
 
-      <ul>
-        <li>
-          <a href="https://wa.me/message/GV7ARQPONRUNO1" target="_blank">Chame no Whatsapp</a>
-        </li>
+      <!-- Links Section -->
+      <nav>
+        <ul class="links-list">
+          <li class="link-item">
+            <a href="https://wa.me/message/GV7ARQPONRUNO1" target="_blank" rel="noopener noreferrer" class="link-button">
+              <span class="link-icon">💬</span>
+              <span class="link-text">Chame no Whatsapp</span>
+              <span class="link-arrow">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.higilarsantamaria.com.br/" target="_blank">Visite nosso Site</a>
-        </li>
+          <li class="link-item">
+            <a href="https://www.higilarsantamaria.com.br/" target="_blank" rel="noopener noreferrer" class="link-button">
+              <span class="link-icon">🌐</span>
+              <span class="link-text">Visite nosso Site</span>
+              <span class="link-arrow">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://share.google/JfgZLiqOB0MbOg5kM" target="_blank">Avaliações no Google</a>
-        </li>
+          <li class="link-item">
+            <a href="https://share.google/JfgZLiqOB0MbOg5kM" target="_blank" rel="noopener noreferrer" class="link-button">
+              <span class="link-icon">⭐</span>
+              <span class="link-text">Avaliações no Google</span>
+              <span class="link-arrow">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.facebook.com/higilarsm/reviews/" target="_blank">Avaliações no Facecbook</a>
-        </li>
+          <li class="link-item">
+            <a href="https://www.facebook.com/higilarsm/reviews/" target="_blank" rel="noopener noreferrer" class="link-button">
+              <span class="link-icon">👍</span>
+              <span class="link-text">Avaliações no Facebook</span>
+              <span class="link-arrow">→</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-
-      </ul>
-      <div id="social-links">
-        <a href="https://wa.me/message/GV7ARQPONRUNO1" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon>
+      <!-- Social Links -->
+      <div id="social-links" class="social-links">
+        <a href="https://wa.me/message/GV7ARQPONRUNO1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <ion-icon name="logo-whatsapp"></ion-icon>
         </a>
         
-        <a href="https://share.google/JfgZLiqOB0MbOg5kM" target="_blank"><ion-icon name="logo-google"></ion-icon>
+        <a href="https://share.google/JfgZLiqOB0MbOg5kM" target="_blank" rel="noopener noreferrer" aria-label="Google">
+          <ion-icon name="logo-google"></ion-icon>
         </a>
         
-        <a href="https://www.facebook.com/higilarsm/reviews/" target="_blank"><ion-icon name="logo-facebook"></ion-icon>
+        <a href="https://www.facebook.com/higilarsm/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <ion-icon name="logo-facebook"></ion-icon>
         </a>
         
-        <a href="https://www.instagram.com/higilarsantamaria/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>
+        <a href="https://www.instagram.com/higilarsantamaria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        
-
       </div>
 
+      <!-- Footer -->
       <footer>
-       A mais de 10 anos Higienizando no aconchego do seu Lar!
+        <p>A mais de 10 anos<br/>Higienizando no aconchego do seu Lar!</p>
       </footer>
     </div>
 
+    <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script
-     nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-      <script src="./script.js"></script>
+    <!-- Theme Script -->
+    <script src="./script.js"></script>
   </body>
 </html>
